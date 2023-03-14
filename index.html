@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOTSTRAB</title>
+  <link rel="stylesheet" href="css/bootstarp.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row text-center bg-danger text-light mt-2">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <h1>Shoib</h1>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <h1>Shoib</h1>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <h1>Shoib</h1>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <h1>Shoib</h1>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/pheasant-7747830_1280.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/superb-fairywren-7770904_1280.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/vietnamese-woman-7775904_1280.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-xl-3 col-lg-3">
+          <img width="100%" class="img-thumbnail"
+            src="data:image/png;base64,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"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-8 col-xl-8 col-lg-8">
+          <div class="card">
+            <div class="card-body ">
+              <div class="table-responsive">
+                <table class="table table-dark table-hover">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>name</th>
+                      <th>email</th>
+                      <th>city</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>1</td>
+                      <td>shoib </td>
+                      <td>shoib</td>
+                      <td>sikar</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>shoib </td>
+                      <td>shoib </td>
+                      <td>sikar</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>shoib </td>
+                      <td>shoib </td>
+                      <td>sikar</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-xl-12 col-lg-12">
+          <figure class="figure">
+            <img width="100%"
+              src="data:image/png;base64,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"
+              class="figure-img img-fluid rounded"
+              alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-xl-12 col-lg-12">
+          <div class="  alert alert-danger">SHOIB KHAN KIRDOLI SIKAR</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <a href="" class="btn btn-info btn-sm  badge badge-circle"> submit</a> -->
+  <!-- <span class="btn btn-outline-info">Submit</span> -->
+
+
+
+  <!-- <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div> -->
+
+
+
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+          <div class="card">
+            <div class="card-body ">
+              <table class="table  table-dark table-hover ">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>#</th>
+                    <th>#</th>
+                    <th>#</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>shoib</td>
+                    <td>khan</td>
+                    <td>kirdoli</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- <button type="button" class="btn btn-primary">
+    Notifications <span class="badge badge-light">4</span>
+  </button>
+
+  <button type="button" class="btn btn-primary">
+    Profile <span class="badge badge-light">9</span>
+    <span class="sr-only">unread messages</span>
+  </button>
+<br><br>
+
+  <span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+<br><br><br>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+
+
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+<br><br>
+
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button> 
+
+<br><br>
+
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+
+<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+
+
+<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Single toggle
+</button> -->
+
+
+<div class="container">
+  <div class="row mt-5 mb-5 text-center">
+    <div class="col-3 bg-dark text-light">
+      <p>Red</p>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-primary">
+      <p>primary</p>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-danger">
+      <p>Danger</p>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-info">
+      <p>Info</p>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-warning">
+      <p>Warning</p>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-success">
+      <p>Success</p>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-secondary">
+      <p>test</p>
+    </div>
+
+
+    <div class="container">
+<div class="row mt-5 md-5">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+   <div class="col-3"></div>
+   <div class="col-3 bg-success"><p>success</p></div>
+   <div class="col-3"></div> 
+   <div class="col-3"></div>
+   <div class="col-3 bg-primary"><p>primary</p></div>
+   <div class="col-3"> </div> 
+   <div class="col-3"></div>
+    <div class="col-3 bg-danger"> <p>danger</p></div>
+    <div class="col-3"> </div>
+    <div class="col-3"></div>
+    <div class="col-3  bg-info" ><p>info</p></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-dark text-light"><p>dark</p></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-primary"><p>primary</p></div>
+    <div class="col-3"></div> 
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3 bg-warning"><p>warning</p></div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-5"> </div>
+   <div class="col-2 bg-primary "> <p>pri</p></div>
+   <div class="col-5"></div>
+
+   <div class="col-3"></div>
+   <div class="col-2 bg-secondary "><p>sec</p></div>
+   <div class="col-2"></div>
+   <div class="col-2 bg-warning "><p>war</p></div>
+   <div class="col-3"></div>
+   
+   <div class="col-1"></div>
+   <div class="col-2 bg-info "><p>info</p></div>
+   <div class="col-6"></div>
+   <div class="col-2 bg-danger "><p>dan</p></div>
+   <div class="col-1"></div>
+
+   <div class="col-1 bg-success "><p>.</p></div>
+   <div class="col-10"></div>
+   <div class="col-1 bg-dark text-light "><p>.</p></div>
+
+  <div class="col-1"></div>
+  <div class="col-2 bg-secondary "><p>sec</p></div>
+<div class="col-6"></div>
+  <div class="col-2 bg-warning "><p>war</p></div>
+
+  <div class="col-3"></div>
+  <div class="col-2 bg-info "><p>info</p></div>
+  <div class="col-2"></div>
+  <div class="col-2 bg-danger "><p>dan</p></div>
+
+  <div class="col-5"></div>
+  <div class="col-2 bg-primary "> <p>pri</p></div>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row text-center md-5 mt-5">
+    <div class="col-5"> </div>
+   <div class="col-2 bg-primary cd1"> <p>primary</p></div>
+   <div class="col-5"></div>
+
+   <div class="col-3"></div>
+   <div class="col-2 bg-secondary cd1"><p>secondary</p></div>
+   <div class="col-2"></div>
+   <div class="col-2 bg-warning cd1"><p>warning</p></div>
+   <div class="col-3"></div>
+   
+   <div class="col-1"></div>
+   <div class="col-2 bg-info cd1"><p>info</p></div>
+   <div class="col-6"></div>
+   <div class="col-2 bg-danger cd1"><p>danger</p></div>
+   <div class="col-1"></div>
+
+   <div class="col-1 bg-success cd1"><p>success</p></div>
+   <div class="col-10"></div>
+   <div class="col-1 bg-dark cd1"><p>.</p></div>
+
+  <div class="col-1"></div>
+  <div class="col-2 bg-secondary cd1"><p>secondary</p></div>
+<div class="col-6"></div>
+  <div class="col-2 bg-warning cd1"><p>warning</p></div>
+
+  <div class="col-3"></div>
+  <div class="col-2 bg-info cd1"><p>info</p></div>
+  <div class="col-2"></div>
+  <div class="col-2 bg-danger cd1"><p>danger</p></div>
+
+  <div class="col-5"></div>
+  <div class="col-2 bg-primary cd1"> <p>primary</p></div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
